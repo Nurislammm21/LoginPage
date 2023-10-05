@@ -10,6 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+       binding.btnSignIn.setOnClickListener{
+           supportFragmentManager.beginTransaction().replace(R.id.placeHolder,SignInFragment.newInstance()).commit()
+       }
 
 
     }

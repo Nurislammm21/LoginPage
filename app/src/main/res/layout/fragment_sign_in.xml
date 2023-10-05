@@ -1,6 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignInFragment"/>
+    android:background="#93CDE8"
+    tools:context=".SignInFragment" >
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="227dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/telegramm" />
+
+    <EditText
+        android:id="@+id/loginTextS"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Login"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/nameSignInS"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/nameSignInS"
+        app:layout_constraintTop_toBottomOf="@+id/nameSignInS" />
+
+    <TextView
+        android:id="@+id/txtS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Welcome to Telegramm"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/img"
+        app:layout_constraintStart_toStartOf="@+id/img"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+    <EditText
+        android:id="@+id/passwordLoginS"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/loginTextS"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loginTextS"
+        app:layout_constraintTop_toBottomOf="@+id/loginTextS" />
+
+
+    <EditText
+        android:id="@+id/nameSignInS"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Name "
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/textS"
+        app:layout_constraintStart_toStartOf="@+id/textS"
+        app:layout_constraintTop_toBottomOf="@+id/textS" />
+
+    <Button
+        android:id="@+id/btnLoginS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#1E5B83"
+        android:text="LOGIN"
+        app:layout_constraintEnd_toEndOf="@+id/passwordLoginS"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordLoginS"
+        app:layout_constraintTop_toBottomOf="@+id/passwordLoginS" />
+
+    <Button
+        android:id="@+id/btnSignInS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#1E5B83"
+        android:text="SIGN IN"
+        app:layout_constraintEnd_toEndOf="@+id/btnLoginS"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnLoginS"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginS" />
+
+    <TextView
+        android:id="@+id/textS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/arbutus"
+        android:text="Sign in to account"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtS"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/txtS"
+        app:layout_constraintTop_toBottomOf="@+id/txtS" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
