@@ -11,7 +11,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
        binding.btnSignIn.setOnClickListener{
-           supportFragmentManager.beginTransaction().replace(R.id.placeHolder,SignInFragment.newInstance()).commit()
+           supportFragmentManager.beginTransaction().setCustomAnimations(android.R.anim.slide_in_left,android.R.anim.slide_out_right).replace(R.id.placeHolder,SignInFragment.newInstance()).commit()
+
        }
 
 
